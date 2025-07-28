@@ -52,6 +52,14 @@ module.exports = {
             filename: "ingresar.html",
             template: "src/html/ingresar.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "registrate.html",
+            template: "src/html/registrate.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "cuenta.html",
+            template: "src/html/cuenta.html",
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {
