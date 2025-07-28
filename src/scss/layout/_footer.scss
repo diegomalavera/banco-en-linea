@@ -1,0 +1,12 @@
+.footer {
+    color: #787878;
+    padding: 15px 0;
+    background-color: #dddddd;
+    .logo {
+        text-align: right;
+        img {
+            filter: grayscale(100%);
+            width: 150px;
+        }
+    }
+}

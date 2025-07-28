@@ -1,0 +1,38 @@
+.btn-primary {
+    --bs-btn-bg: #00abe4;
+    --bs-btn-border-color: #00abe4;
+    --bs-btn-padding-x: 1.2rem;
+    --bs-btn-padding-y: 0.6rem;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+// Default
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}

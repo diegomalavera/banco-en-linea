@@ -1,0 +1,121 @@
+.banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    img {
+        width: auto;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .description {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        max-width: 700px;
+        z-index: 2;
+        text-align: center;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.service {
+    padding: 50px 0;
+    &.service-even {
+        background-color: #f2f2f2;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        h2 {
+            color: #00abe4;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    .image {
+        text-align: center;
+        img {
+            max-width: 100%;
+            width: 400px;
+        }
+    }
+}
+
+.newsletter-form {
+    padding: 50px 0;
+    text-align: center;
+    h2 {
+        color: #00abe4;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+
+// Default
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .banner {
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .description {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            text-align: left;
+            transform: translate(0, -50%);
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
