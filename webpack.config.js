@@ -48,6 +48,10 @@ module.exports = {
             filename: "servicio-al-cliente.html",
             template: "src/html/servicio-al-cliente.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "ingresar.html",
+            template: "src/html/ingresar.html",
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {
