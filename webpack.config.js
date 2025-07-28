@@ -13,7 +13,7 @@ module.exports = {
     },
     output: {
         filename: "resources/[name].js",
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "docs"),
     },
     resolve: {
         extensions: [".ts", ".js"],
@@ -54,7 +54,7 @@ module.exports = {
         }),
     ],
     devServer: {
-        static: "./dist",
+        static: "./docs",
         port: 3000,
         open: false,
     },
